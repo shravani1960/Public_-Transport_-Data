@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Transport Data Analysis</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #123c69;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+
+        h2 {
+            color: #123c69;
+            border-bottom: 2px solid #123c69;
+            padding-bottom: 8px;
+        }
+
+        .index a {
+            display: block;
+            color: #123c69;
+            padding: 8px;
+            text-decoration: none;
+        }
+
+        .index a:hover {
+            background-color: #e3edf7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #123c69;
+            color: white;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #555555;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .card {
+                box-shadow: none;
+                border: 1px solid #dddddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PUBLIC TRANSPORT DATA ANALYSIS</h1>
+    <p>Data Analytics Mini Project</p>
+</header>
+
+<div class="container">
+
+    <section class="card index" id="index">
+        <h2>INDEX</h2>
+        <a href="#intro">1. Introduction</a>
+        <a href="#dataset">2. Dataset Information</a>
+        <a href="#types">3. Data Types</a>
+        <a href="#missing">4. Missing Values Analysis</a>
+        <a href="#duplicate">5. Duplicate Records</a>
+        <a href="#statistics">6. Statistical Summary</a>
+        <a href="#transport">7. Transport Analysis</a>
+        <a href="#average">8. Average Analysis</a>
+        <a href="#numeric">9. Numeric Data Analysis</a>
+        <a href="#summary">10. Final Project Summary</a>
+    </section>
+
+    <section class="card" id="intro">
+        <h2>1. Introduction</h2>
+        <p>
+            This project analyzes public transport and commuting data
+            using Python and Pandas. The purpose is to understand the
+            dataset, examine data quality and generate useful summaries.
+        </p>
+    </section>
+
+    <section class="card" id="dataset">
+        <h2>2. Dataset Information</h2>
+
+        <table>
+            <tr>
+                <th>Dataset Detail</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Dataset Name</td>
+                <td>Public Transport &amp; Commuting Study</td>
+            </tr>
+            <tr>
+                <td>Number of Records</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>Number of Columns</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Excel File</td>
+                <td>Public_Transport_Data.xlsx</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="card" id="types">
+        <h2>3. Data Types</h2>
+        <p>The dataset contains text and object-type columns.</p>
+
+        <table>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+            </tr>
+            <tr><td>Public Transport &amp; Commuting Study</td><td>Object</td></tr>
+            <tr><td>Unnamed: 1</td><td>String</td></tr>
+            <tr><td>Unnamed: 2</td><td>String</td></tr>
+            <tr><td>Unnamed: 3</td><td>String</td></tr>
+            <tr><td>Unnamed: 4</td><td>String</td></tr>
+            <tr><td>Unnamed: 5</td><td>Object</td></tr>
+            <tr><td>Unnamed: 6</td><td>Object</td></tr>
+            <tr><td>Unnamed: 7</td><td>Object</td></tr>
+            <tr><td>Unnamed: 8</td><td>String</td></tr>
+            <tr><td>Unnamed: 9</td><td>String</td></tr>
+        </table>
+    </section>
+
+    <section class="card" id="missing">
+        <h2>4. Missing Values Analysis</h2>
+        <p class="success">Missing values: 0</p>
+        <p>
+            The Python output shows zero missing values in each of the
+            ten columns.
+        </p>
+    </section>
+
+    <section class="card" id="duplicate">
+        <h2>5. Duplicate Records</h2>
+        <p class="success">Duplicate Records: 0</p>
+        <p>No duplicate records were reported in the Python output.</p>
+    </section>
+
+    <section class="card" id="statistics">
+        <h2>6. Statistical Summary</h2>
+
+        <table>
+            <tr>
+                <th>Statistic</th>
+                <th>Result</th>
+            </tr>
+            <tr><td>Count</td><td>56</td></tr>
+            <tr><td>Unique Values in First Column</td><td>56</td></tr>
+            <tr><td>Most Frequent Record ID</td><td>1</td></tr>
+        </table>
+
+        <p>
+            The statistical summary helps understand the distribution
+            and unique values in the dataset.
+        </p>
+    </section>
+
+    <section class="card" id="transport">
+        <h2>7. Transport Analysis</h2>
+        <p>
+            Transport-related information can be analyzed to understand
+            commuting patterns and public transport usage.
+        </p>
+        <p><b>Note:</b> The Python output indicates that a
+        "Transport Mode" column was not found.</p>
+    </section>
+
+    <section class="card" id="average">
+        <h2>8. Average Analysis</h2>
+        <p>
+            Average calculations require numeric columns in the dataset.
+        </p>
+        <p><b>Current Result:</b> No numeric columns were detected.</p>
+    </section>
+
+    <section class="card" id="numeric">
+        <h2>9. Numeric Data Analysis</h2>
+        <p>
+            Numeric analysis can be performed after identifying and
+            converting the appropriate dataset columns into numeric values.
+        </p>
+    </section>
+
+    <section class="card" id="summary">
+        <h2>10. Final Project Summary</h2>
+
+        <table>
+            <tr>
+                <th>Analysis</th>
+                <th>Result</th>
+            </tr>
+            <tr><td>Total Records</td><td>56</td></tr>
+            <tr><td>Total Columns</td><td>10</td></tr>
+            <tr><td>Missing Values</td><td>0</td></tr>
+            <tr><td>Duplicate Records</td><td>0</td></tr>
+        </table>
+
+        <p>
+            The project successfully loaded the Excel dataset and
+            displayed its basic information. Further analysis requires
+            correct column names and identification of numeric fields.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>Public Transport Data Analysis | Data Analytics Project</p>
+</footer>
+
+</body>
+</html>
